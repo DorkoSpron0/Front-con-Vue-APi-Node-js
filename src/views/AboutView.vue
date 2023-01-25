@@ -1,5 +1,20 @@
+<script>
+    import Login from '../components/LoginComponent.vue'
+
+    export default {
+        data() {
+            return {}
+        },
+        components: {
+            Login
+        }
+    }
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <Login />
 </template>
+
+<style>
+
+</style>

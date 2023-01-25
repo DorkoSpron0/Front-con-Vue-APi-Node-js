@@ -1,15 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
+    redirect: { name: 'register' }
+  },
+  {
+    path: '/home',
     name: 'home',
+    component: Home
+  },
+  {
+    path: '/users/register',
+    name: 'register',
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/users/login',
+    name: 'Login',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
