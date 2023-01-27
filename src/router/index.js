@@ -5,7 +5,7 @@ import Home from '../views/Home.vue'
 const routes = [
   {
     path: '/',
-    redirect: { name: 'register' }
+    redirect: { name: 'login' }
   },
   {
     path: '/home',
@@ -19,7 +19,7 @@ const routes = [
   },
   {
     path: '/users/login',
-    name: 'Login',
+    name: 'login',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

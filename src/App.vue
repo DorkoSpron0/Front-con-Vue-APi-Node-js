@@ -1,23 +1,22 @@
 <script>
-    import HomeView from './views/HomeView.vue';
+import HomeView from './views/HomeView.vue';
 
-    export default {
-        data() {
-            return {}
-        },
-        components: {
-            HomeView
-        }
+export default {
+    data() {
+        return {}
+    },
+    components: {
+        HomeView
     }
+}
 </script>
 
 <template>
-    <nav>
-        <router-link to="/users/register">Register</router-link> |
-        <router-link to="/users/login">Login</router-link>
-    </nav>
-    <router-view/>
+        <router-view />
 </template>
 
 <style>
+    body{
+        background-color: #212529;
+    }
 </style>
